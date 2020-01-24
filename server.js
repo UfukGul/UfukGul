@@ -229,7 +229,7 @@ client.on("message", async message => {
         .setColor("BLACK")
         .setTitle("Sa-As sistemi!")
         .setDescription(
-          "<a:krstl:645227930208829450> **Aleyküm Selam, Hoşgeldin!**"
+          "<a:krmz:670247528398061598> **Aleyküm Selam, Hoşgeldin!**"
         )
         .setFooter(client.user.username, client.user.avatarURL);
 
@@ -261,7 +261,7 @@ client.on("guildMemberRemove", async member => {
       let msj = new Discord.RichEmbed()
         .setColor("BLACK")
         .setDescription(
-          `<@${member.user.id}> Güle güle, özleneceksin!\nEğer beni eklemek istersen: [[Tıkla!]](https://discordapp.com/oauth2/authorize?client_id=642436223314558976&scope=bot&permissions=8)`
+          `<@${member.user.id}> Güle güle, özleneceksin!\nEğer beni eklemek istersen: [[Tıkla!]]()`
         )
         .setFooter(client.user.username, client.user.avatarURL);
 
