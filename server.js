@@ -244,7 +244,7 @@ client.on("guildMemberAdd", async member => {
       const msj = new Discord.RichEmbed()
         .setColor("BLACK")
         .setDescription(
-          `<@${member.user.id}> sunucuya hoşgeldin!\nBu sunucu **<@${client.user.id}>** kullanıyor!\nKomutlarımı görmek için: !yardım\nEğer beni eklemek istersen: [[Tıkla!]](https://discordapp.com/oauth2/authorize?client_id=642436223314558976&scope=bot&permissions=8)`
+          `<@${member.user.id}> sunucuya hoşgeldin!\nBu sunucu **<@${client.user.id}>** kullanıyor!\nKomutlarımı görmek için: !yardım\nEğer beni eklemek istersen:`
         )
         .setFooter(client.user.username, client.user.avatarURL);
 
