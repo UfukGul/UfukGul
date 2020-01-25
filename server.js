@@ -393,7 +393,7 @@ client.on("guildMemberRemove", async member => {
     const aa = new Discord.RichEmbed()
       .setColor("BLACK")
       .setDescription(
-        `\`\`${member.user.tag}\`\` **adlı şahıs aramızdan ayrıldı.\nŞahsı davet eden:** <a:fire:670247508223721503> \`\`Bulunamadı!\`\``
+        `\`\`${member.user.tag}\`\` **A dlı şahıs aramızdan ayrıldı.\nŞahsı davet eden:** <a:fire:670247508223721503> \`\`Bulunamadı!\`\``
       )
       .setFooter(client.user.username, client.user.avatarURL);
     client.channels.get(kanal).send(aa);
@@ -402,7 +402,7 @@ client.on("guildMemberRemove", async member => {
     const aa = new Discord.RichEmbed()
       .setColor("BLACK")
       .setDescription(
-        `\`\`${member.user.tag}\`\` **adlı şahıs aramızdan ayrıldı.\nŞahsı davet eden:** <a:fire:670247508223721503> \`\`${sa.tag}\`\``
+        `\`\`${member.user.tag}\`\` **Adlı şahıs aramızdan ayrıldı.\nŞahsı davet eden:** <a:fire:670247508223721503> \`\`${sa.tag}\`\``
       )
       .setFooter(client.user.username, client.user.avatarURL);
     client.channels.get(kanal).send(aa);
