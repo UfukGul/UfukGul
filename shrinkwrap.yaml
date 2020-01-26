@@ -5,26 +5,26 @@ dependencies:
   cpu-stats: 1.0.0
   crypto: 1.0.1
   dblapi.js: 2.3.0
-  discord-anti-spam: 2.3.3
+  discord-anti-spam: 2.3.4
   discord.js: 11.5.1
   express: 4.17.1
   figlet: 1.2.4
   fs: 0.0.2
   http: 0.0.0
   jimp: 0.9.3
-  math-expression-evaluator: 1.2.17
+  math-expression-evaluator: 1.2.22
   moment: 2.24.0
   moment-duration-format: 2.3.2
   ms: 2.1.2
   node-opus: 0.3.3
-  node-superfetch: 0.1.9
+  node-superfetch: 0.1.10
   os: 0.1.1
   parse-ms: 2.1.0
   quick.db: 6.3.2
   simple-youtube-api: 5.2.1
   util: 0.12.1
   weather-js: 2.0.0
-  ytdl-core: 1.0.6
+  ytdl-core: 1.0.7
 packages:
   /@babel/runtime/7.7.7:
     dependencies:
@@ -738,12 +738,12 @@ packages:
     dev: false
     resolution:
       integrity: sha1-l4hXRCxEdJ5CBmE+N5RiBYJqvYA=
-  /discord-anti-spam/2.3.3:
+  /discord-anti-spam/2.3.4:
     dependencies:
       discord.js: 11.5.1
     dev: false
     resolution:
-      integrity: sha512-/sqOaRvNXYTM3UfaMc1R4ZWUPEEqV6MoDPDz8ahPUTajFlDaqMSH9M4MEFwB8zTiKK80rElMyR1m3BnSOY6Wiw==
+      integrity: sha512-Y9XAIfGegNoSbwpGIIp5p5nIVi9BygISv80N1i92A+URCeqIqCCAFmkOWp8hM8JbyiXDbeiAFT0Jqae+h9Zv9A==
   /discord.js/11.5.1:
     dependencies:
       long: 4.0.0
@@ -972,7 +972,7 @@ packages:
     dependencies:
       asynckit: 0.4.0
       combined-stream: 1.0.8
-      mime-types: 2.1.25
+      mime-types: 2.1.26
     dev: false
     engines:
       node: '>= 0.12'
@@ -1278,10 +1278,10 @@ packages:
       node: '>=6'
     resolution:
       integrity: sha512-9WLF1VAtbVij03HWJKbVZ8L0orsoZiP53UljR5EwaDrozQFMsTGRDPe3PbzWV73He8a+j5H/hWZNoI2VkUSsiw==
-  /math-expression-evaluator/1.2.17:
+  /math-expression-evaluator/1.2.22:
     dev: false
     resolution:
-      integrity: sha1-3oGf282E3M2PrlnGrreWFbnSZqw=
+      integrity: sha512-L0j0tFVZBQQLeEjmWOvDLoRciIY8gQGWahvkztXUal8jH8R5Rlqo9GCvgqvXcy9LQhEWdQCVvzqAbxgYNt4blQ==
   /media-typer/0.3.0:
     dev: false
     engines:
@@ -1304,6 +1304,12 @@ packages:
       node: '>= 0.6'
     resolution:
       integrity: sha512-UbfJCR4UAVRNgMpfImz05smAXK7+c+ZntjaA26ANtkXLlOe947Aag5zdIcKQULAiF9Cq4WxBi9jUs5zkA84bYQ==
+  /mime-db/1.43.0:
+    dev: false
+    engines:
+      node: '>= 0.6'
+    resolution:
+      integrity: sha512-+5dsGEEovYbT8UY9yD7eE4XTc4UwJ1jBYlgaQQF38ENsKR3wj/8q8RFZrF9WIZpB2V1ArTVFUva8sAul1NzRzQ==
   /mime-types/2.1.25:
     dependencies:
       mime-db: 1.42.0
@@ -1312,6 +1318,14 @@ packages:
       node: '>= 0.6'
     resolution:
       integrity: sha512-5KhStqB5xpTAeGqKBAMgwaYMnQik7teQN4IAzC7npDv6kzeU6prfkR67bc87J1kWMPGkoaZSq1npmexMgkmEVg==
+  /mime-types/2.1.26:
+    dependencies:
+      mime-db: 1.43.0
+    dev: false
+    engines:
+      node: '>= 0.6'
+    resolution:
+      integrity: sha512-01paPWYgLrkqAyrlDorC1uDwl2p3qZT7yl806vW7DvDoxwXi46jsjFbg+WdwotBIk6/MbEhO/dh5aZ5sNj/dWQ==
   /mime/1.6.0:
     dev: false
     engines:
@@ -1391,7 +1405,7 @@ packages:
     requiresBuild: true
     resolution:
       integrity: sha512-ZQniA8iJ6y/qOTmW6eyzM9m8odt4CIGV0NM9/U03/pYLhGyxy18QXO25WfrWd8XsUYx57tnxll2xxj54CN08uQ==
-  /node-superfetch/0.1.9:
+  /node-superfetch/0.1.10:
     dependencies:
       form-data: 2.5.1
       node-fetch: 2.6.0
@@ -1399,7 +1413,7 @@ packages:
     engines:
       node: '>=8'
     resolution:
-      integrity: sha512-59rrdbpPmVIbizlRFRKTtzuvenG0Qnp48wUff4yXqTHKvKhYU7G7nxUVE/a1A/iva1MWLEQ+/ots3oM4JpEQIA==
+      integrity: sha512-aM+4GmjwCSku1VLsVh/mjnxQHa3StRI8uB7eYSktstlMD6Dxvpk/tT6UFEg2NwlNPjLlwsFmexduNUahckCm2A==
   /oauth-sign/0.9.0:
     dev: false
     resolution:
@@ -2008,7 +2022,7 @@ packages:
     dev: false
     resolution:
       integrity: sha1-AI4G2AlDIMNy28L47XagymyKxBk=
-  /ytdl-core/1.0.6:
+  /ytdl-core/1.0.7:
     dependencies:
       html-entities: 1.2.1
       m3u8stream: 0.6.4
@@ -2018,7 +2032,7 @@ packages:
     engines:
       node: '>=6'
     resolution:
-      integrity: sha512-6+g8ZRxO4V7U4U8HiE3R2Or7MSOl5g8BIZ4Z6Wa/cGsNyqu5IStMJiR3I+HfI+4jGtSaHzAM2SrkVtIrjGcBNA==
+      integrity: sha512-gECPN5g5JnSy8hIq11xHIGe1T/Xzy0mWxQin3zhlJ3nG/YjPcEVEejrdd2XmA4Vv2Zw3+b1ZyDjmt37XfZri6A==
 registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
@@ -2029,23 +2043,23 @@ specifiers:
   cpu-stats: ^1.0.0
   crypto: ^1.0.1
   dblapi.js: ^2.3.0
-  discord-anti-spam: ^2.3.3
+  discord-anti-spam: ^2.3.4
   discord.js: ^11.5.1
   express: ^4.17.1
   figlet: ^1.2.4
   fs: ^0.0.2
   http: ^0.0.0
   jimp: ^0.9.3
-  math-expression-evaluator: ^1.2.17
+  math-expression-evaluator: ^1.2.22
   moment: ^2.24.0
   moment-duration-format: ^2.2.2
   ms: ^2.1.2
   node-opus: ^0.3.2
-  node-superfetch: ^0.1.9
+  node-superfetch: ^0.1.10
   os: ^0.1.1
   parse-ms: ^2.0.0
   quick.db: ^6.3.2
   simple-youtube-api: ^5.2.1
   util: ^0.12.1
   weather-js: ^2.0.0
-  ytdl-core: ^1.0.6
+  ytdl-core: ^1.0.7
