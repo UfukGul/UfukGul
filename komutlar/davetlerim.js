@@ -10,6 +10,8 @@ exports.run = async (client, message, args, tools) => {
   }
 
   let bilgi = await db.fetch(`davet_${kişi.id}_${message.guild.id}`);
+  if (message.channel.id !== "670626116943347723") return message.channel.send('<a:can:670247508542357535> Bu komut bu kanalda engellenmiştir')
+
   let sayı2;
   if (!bilgi) {
     sayı2 = 0;
