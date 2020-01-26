@@ -1,6 +1,7 @@
 const Discord = require('discord.js');
 
 exports.run = async (client, message) => {
+  if (message.channel.id !== "670632540197093377") return message.channel.send('<a:can:670247508542357535> Komut Bu Kanalda Engellenmiştir')
  
   if (client.guilds.size < 20) return message.reply("Bot `20` tane sunucuda bulunmuyor!")
   
