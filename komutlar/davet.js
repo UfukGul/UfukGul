@@ -4,7 +4,7 @@ module.exports.run = async (client, message) => {
   if (message.channel.id !== "670632540197093377") return message.channel.send('<a:can:670247508542357535> Komut Bu Kanalda Engellenmiştir')
   const embed = new Discord.RichEmbed()
     .setColor("BLACK")
-    .addField(`Botu Ekleyin!`, `[EKLE](https://discordapp.com/oauth2/authorize?client_id=670244059985608720&scope=bot&permissions=805314622)`)
+    .addField(`Botu Ekleyin!`, `[EKLE](https://discordapp.com/oauth2/authorize?client_id=671249130215047178&scope=bot&permissions=805829694)`)
 .setFooter(client.user.username, client.user.avatarURL)
 
   message.channel.send(embed);

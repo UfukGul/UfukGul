@@ -728,4 +728,35 @@ client.on("error", e => {
   console.log(chalk.bgRed(e.replace(regToken, "that was redacted")));
 });
 
+///////
+
+client.on('guildMemberAdd', async (member, guild) => {
+    
+  let userinfo = {};
+    userinfo.dctarih = moment.utc(member.user.createdAt).format('DD/MM/YYYY HH:mm')
+    userinfo.id = member.id;
+
+    userinfo.status = member.user.presence.status.toString()
+    .replace("dnd", `Rahatsız etmeyin.`)
+    .replace("online", `Çevrimiçi.`)
+    .replace("idle", `Boşta.`)
+    .replace("offline", `Çevrimdışı.`)  
+  
+    let avatar = member.user.avatarURL || member.user.defaultAvatarURL; 
+    var embed = new Discord.RichEmbed()
+    .setTitle(`Sunucuya hoşgeldiniz, ${member.user.username}!`)
+    .setDescription(`Sizinle birlikte ${member.guild.memberCount} kişiye ulaştık.`)
+    .addField(`ID:`, userinfo.id, true) 
+    .addField(`Discord'a katılım tarihi:`, userinfo.dctarih, true) 
+    .addField(`Durum:`, userinfo.status, true) 
+    .addField('Şu an oynadığı oyun;', member.user.presence.game ? member.user.presence.game.name : 'Şu an oyun oynamamakta.')
+    .setColor('RANDOM') 
+    .setTimestamp()
+    .setThumbnail(avatar)
+    client.channels.get("671269484526305280").send(embed)
+  
+  })
+
+//////
+
 client.login(ayarlar.token);
