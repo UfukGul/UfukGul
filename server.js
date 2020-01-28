@@ -453,11 +453,10 @@ client.on("guildMemberAdd", async member => {
     }
 
     const aa = new Discord.RichEmbed()
-      .setColor("BLACK")
-      .setDescription(
+     
         `\`\`${member.user.tag}\`\` **Adlı şahıs sunucuya katıldı.\nŞahsı davet eden:** \`\`${davetçi.tag}\`\`\n**Toplam \`\`${sayı2}\`\` daveti oldu!** <a:fire:670247508223721503> ` 
-      )
-      .setFooter(client.user.username, client.user.avatarURL);
+      
+      
     client.channels.get(kanal).send(aa);
     if (!veri) return;
 
