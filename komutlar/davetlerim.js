@@ -2,7 +2,7 @@ const Discord = require("discord.js"),
   db = require("quick.db");
 
 exports.run = async (client, message, args, tools) => {
-  if (message.channel.id !== "670928794952925184") return message.channel.send(' Komut Bu Kanalda Engellenmiştir')
+  
   let kişi;
   if (message.mentions.members.first()) {
     kişi = message.mentions.members.first();
