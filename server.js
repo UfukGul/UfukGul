@@ -391,20 +391,16 @@ client.on("guildMemberRemove", async member => {
 
   if (!d) {
     const aa = new Discord.RichEmbed()
-      .setColor("BLACK")
-      .setDescription(
+      
         `\`\`${member.user.tag}\`\` **A dlı şahıs aramızdan ayrıldı.\nŞahsı davet eden:** <a:fire:670247508223721503> \`\`Bulunamadı!\`\``
-      )
-      .setFooter(client.user.username, client.user.avatarURL);
+     
     client.channels.get(kanal).send(aa);
     return;
   } else {
     const aa = new Discord.RichEmbed()
-      .setColor("BLACK")
-      .setDescription(
+      
         `\`\`${member.user.tag}\`\` **Adlı şahıs aramızdan ayrıldı.\nŞahsı davet eden:** <a:fire:670247508223721503> \`\`${sa.tag}\`\``
-      )
-      .setFooter(client.user.username, client.user.avatarURL);
+     
     client.channels.get(kanal).send(aa);
 
     if (!veri) return;
