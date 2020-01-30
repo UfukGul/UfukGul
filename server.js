@@ -1,3 +1,4 @@
+
 const keep_alive = require("./keep_alive.js"); //index.js Const Kısımlarına
 
 var http = require("http");
@@ -121,7 +122,21 @@ client.on("message", async message => {
 
 
 
-
+client.on("ready", () => {
+  setInterval(() => {
+    let botdurum = client.channels.find(c => c.id === "662963782900908073");
+    const botistatistik = new Discord.RichEmbed()
+      .setColor("GREEN")
+      .addField(`Sunucular`, `${client.guilds.size.toLocaleString()}`)
+      .addField(
+        `Kullanıcılar`,
+        client.guilds.reduce((a, b) => a + b.memberCount, 0).toLocaleString()
+      )
+      .addField(`Ping`, `${client.ping}`)
+      .setTimestamp();
+    botdurum.send(botistatistik);
+  }, 30000);
+});
 //////////////////////////////////////////////////////////////////////////////
 client.on("channelDelete", async channel => {
   let kanal = await db.fetch(`kkk_${channel.guild.id}`);
@@ -377,16 +392,20 @@ client.on("guildMemberRemove", async member => {
 
   if (!d) {
     const aa = new Discord.RichEmbed()
-      
-        `\`\`${member.user.tag}\`\` **A dlı şahıs aramızdan ayrıldı.\nŞahsı davet eden:**  \`\`Bulunamadı!\`\``
-     
+      .setColor("RED")
+      .setDescription(
+        `\`\`${member.user.tag}\`\` **A dlı şahıs aramızdan ayrıldı.\nŞahsı davet eden:** <a:fire:670247508223721503> \`\`Bulunamadı!\`\``
+      )
+      .setFooter(client.user.username, client.user.avatarURL);
     client.channels.get(kanal).send(aa);
     return;
   } else {
     const aa = new Discord.RichEmbed()
-      
-        `\`\`${member.user.tag}\`\` **Adlı şahıs aramızdan ayrıldı.\nŞahsı davet eden:**  \`\`${sa.tag}\`\``
-     
+      .setColor("GREEN")
+      .setDescription(
+        `\`\`${member.user.tag}\`\` **Adlı şahıs aramızdan ayrıldı.\nŞahsı davet eden:** <a:fire:670247508223721503> \`\`${sa.tag}\`\``
+      )
+      .setFooter(client.user.username, client.user.avatarURL);
     client.channels.get(kanal).send(aa);
 
     if (!veri) return;
@@ -435,10 +454,11 @@ client.on("guildMemberAdd", async member => {
     }
 
     const aa = new Discord.RichEmbed()
-     
+      .setColor("BLACK")
+      .setDescription(
         `\`\`${member.user.tag}\`\` **Adlı şahıs sunucuya katıldı.\nŞahsı davet eden:** \`\`${davetçi.tag}\`\`\n**Toplam \`\`${sayı2}\`\` daveti oldu!** <a:fire:670247508223721503> ` 
-      
-      
+      )
+      .setFooter(client.user.username, client.user.avatarURL);
     client.channels.get(kanal).send(aa);
     if (!veri) return;
 
