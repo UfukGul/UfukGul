@@ -394,16 +394,16 @@ client.on("guildMemberRemove", async member => {
     const aa = new Discord.RichEmbed()
       .setColor("RED")
       .setDescription(
-        `\`\`${member.user.tag}\`\` **A dlı şahıs aramızdan ayrıldı.\nŞahsı davet eden:** <a:fire:670247508223721503> \`\`Bulunamadı!\`\``
+        `\`\`${member.user.tag}\`\` **Adlı şahıs aramızdan ayrıldı.\nŞahsı davet eden:**  \`\`Bulunamadı!\`\``
       )
       .setFooter(client.user.username, client.user.avatarURL);
     client.channels.get(kanal).send(aa);
     return;
   } else {
     const aa = new Discord.RichEmbed()
-      .setColor("GREEN")
+      .setColor("RED")
       .setDescription(
-        `\`\`${member.user.tag}\`\` **Adlı şahıs aramızdan ayrıldı.\nŞahsı davet eden:** <a:fire:670247508223721503> \`\`${sa.tag}\`\``
+        `\`\`${member.user.tag}\`\` **Adlı şahıs aramızdan ayrıldı.\nŞahsı davet eden:**  \`\`${sa.tag}\`\``
       )
       .setFooter(client.user.username, client.user.avatarURL);
     client.channels.get(kanal).send(aa);
@@ -454,9 +454,9 @@ client.on("guildMemberAdd", async member => {
     }
 
     const aa = new Discord.RichEmbed()
-      .setColor("BLACK")
+      .setColor("GREEN")
       .setDescription(
-        `\`\`${member.user.tag}\`\` **Adlı şahıs sunucuya katıldı.\nŞahsı davet eden:** \`\`${davetçi.tag}\`\`\n**Toplam \`\`${sayı2}\`\` daveti oldu!** <a:fire:670247508223721503> ` 
+        `\`\`${member.user.tag}\`\` **Adlı şahıs sunucuya katıldı.\nŞahsı davet eden:** \`\`${davetçi.tag}\`\`\n**Toplam \`\`${sayı2}\`\` daveti oldu!** ` 
       )
       .setFooter(client.user.username, client.user.avatarURL);
     client.channels.get(kanal).send(aa);
