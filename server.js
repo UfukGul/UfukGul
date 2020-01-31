@@ -122,21 +122,7 @@ client.on("message", async message => {
 
 
 
-client.on("ready", () => {
-  setInterval(() => {
-    let botdurum = client.channels.find(c => c.id === "662963782900908073");
-    const botistatistik = new Discord.RichEmbed()
-      .setColor("GREEN")
-      .addField(`Sunucular`, `${client.guilds.size.toLocaleString()}`)
-      .addField(
-        `Kullanıcılar`,
-        client.guilds.reduce((a, b) => a + b.memberCount, 0).toLocaleString()
-      )
-      .addField(`Ping`, `${client.ping}`)
-      .setTimestamp();
-    botdurum.send(botistatistik);
-  }, 30000);
-});
+
 //////////////////////////////////////////////////////////////////////////////
 client.on("channelDelete", async channel => {
   let kanal = await db.fetch(`kkk_${channel.guild.id}`);
