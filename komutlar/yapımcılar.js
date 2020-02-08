@@ -21,5 +21,5 @@ module.exports.conf = {
 module.exports.help = {
   name: "yapımcılar",
   description: "yapımcılar",
-  usage: "yapımcılar"
+  usage: "yapımcım"
 };
