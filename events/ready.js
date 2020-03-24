@@ -14,5 +14,5 @@ module.exports = async client => {
   }, 12000);
   client.user.setStatus("dnd");
 
-  client.user.setActivity(">yardım | >davet ", { type: "LİSTENİNG" });
+  client.user.setActivity("m!yardım | m!davet ", { type: "LİSTENİNG" });
 };
