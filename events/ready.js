@@ -5,7 +5,7 @@ const ayarlar = require("../ayarlar.json");
 var prefix = ayarlar.prefix;
 
 module.exports = async client => {
-  var oyun = [">yapımcım"];
+  var oyun = ["b!yapımcım"];
 
   setInterval(async () => {
     var random = Math.floor(Math.random() * (oyun.length - 0 + 1) + 0);
@@ -14,5 +14,5 @@ module.exports = async client => {
   }, 12000);
   client.user.setStatus("dnd");
 
-  client.user.setActivity("m!yardım | m!davet ", { type: "LİSTENİNG" });
+  client.user.setActivity("b!yardım | b!davet ", { type: "LİSTENİNG" });
 };
