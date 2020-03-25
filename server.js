@@ -380,7 +380,7 @@ client.on("guildMemberRemove", async member => {
     const aa = new Discord.RichEmbed()
       .setColor("RED")
       .setDescription(
-        `\`\`${member.user.tag}\`\` **Adlı şahıs aramızdan ayrıldı.\nŞahsı davet eden:**  \`\`Bulunamadı!\`\``
+        `\`\`<@${member.user.id}>\`\` **Adlı şahıs aramızdan ayrıldı.\nŞahsı davet eden:**  \`\`Bulunamadı!\`\``
       )
       .setFooter(client.user.username, client.user.avatarURL);
     client.channels.get(kanal).send(aa);
@@ -389,7 +389,7 @@ client.on("guildMemberRemove", async member => {
     const aa = new Discord.RichEmbed()
       .setColor("RED")
       .setDescription(
-        `\`\`${member.user.tag}\`\` **Adlı şahıs aramızdan ayrıldı.\nŞahsı davet eden:**  \`\`${sa.tag}\`\``
+        `\`\`<@${member.user.id}>\`\` **Adlı şahıs aramızdan ayrıldı.\nŞahsı davet eden:**  \`\`${sa.tag}\`\``
       )
       .setFooter(client.user.username, client.user.avatarURL);
     client.channels.get(kanal).send(aa);
@@ -475,7 +475,7 @@ client.on("guildMemberAdd", async member => {
     const embed = new Discord.RichEmbed()
       .setColor("BLACK")
       .setDescription(
-        ` :loudspeaker: **@${member.user.tag}** adlı şahsa rolü verildi! :inbox_tray:`
+        ` :loudspeaker: <@${member.user.id}>adlı şahsa rolü verildi! :inbox_tray:`
       )
       .setFooter(client.user.username, client.user.avatarURL);
     client.channels.get(kanal).send(embed);
